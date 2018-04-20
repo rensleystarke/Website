@@ -15,5 +15,5 @@ sh 'mvn test-compile -DfitnesseSuiteToRun=FrontPage.ProofOfConceptTest'
 stage('Publish Report') {
 //Vervolgens het Allure rapport publiceren aan de hand van de locatie waar de vorige stage het rapport heeft neergezet.
 publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/fitnesse-results/', reportFiles: 'index.html', reportName: 'FitNesse Report', reportTitles: ''])
-
+}
 }

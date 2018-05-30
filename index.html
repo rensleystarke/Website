@@ -9,7 +9,11 @@ Licence URI: http://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-<title>FitNesse</title>
+  <script>function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }</script>
+  
+<title>Hoofdpagina</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -40,7 +44,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <div><i class="fa fa-phone"></i> +00 (123) 456 7890</div>
       <div>
-        <h1 id="logo"><a href="index.html">FitNesse-Test</a></h1>
+        <h1 id="logo"><a href="index.html">Openrunner-Test</a></h1>
       </div>
       <div>
         <form class="clear" method="post" action="#">
@@ -97,7 +101,8 @@ Licence URI: http://www.os-templates.com/template-terms
     <article>
       <h3 class="heading">Vestibulum vehicula egestas</h3>
       <p>Rhoncus a odio fusce eu lorem vehicula euismod mauris eget sodales mi duis habitant morbi tristique senectus et netus et malesuada fames.</p>
-      <footer><a class="btn" href="#">Turpis egestas</a></footer>
+      <footer><a class="btn" id="demo" href="#">Test button</a></footer>
+      <button type="button" onclick="myFunction()">Click it</button>
     </article>
     <!-- ################################################################################################ -->
   </div>
